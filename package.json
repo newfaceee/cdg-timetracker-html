@@ -1,0 +1,36 @@
+{
+  "name": "cdg-timetracker-html",
+  "version": "1.0.0",
+  "description": "Project for CDG Academy",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newfaceee/cdg-timetracker-html.git"
+  },
+  "author": "Edem Reshidov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newfaceee/cdg-timetracker-html/issues"
+  },
+  "homepage": "https://github.com/newfaceee/cdg-timetracker-html#readme",
+  "devDependencies": {
+    "autoprefixer": "9.8.5",
+    "browser-sync": "2.26.12",
+    "gulp": "4.0.2",
+    "gulp-csso": "4.0.1",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-posthtml": "3.0.5",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "2.6.5",
+    "posthtml-include": "1.4.3"
+  },
+  "dependencies": {
+    "del": "^5.1.0"
+  }
+}
