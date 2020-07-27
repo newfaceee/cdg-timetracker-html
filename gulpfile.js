@@ -57,7 +57,16 @@ gulp.task('server', () => {
 
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
+  gulp.watch('source/js/*.js', gulp.series('copy'));
 });
 
-gulp.task('build', gulp.series('clean', 'css', 'html'));
+gulp.task('copy', () => {
+  return gulp
+    .src(['source/js/**'], {
+      base: 'source',
+    })
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'html'));
 gulp.task('start', gulp.series('build', 'server'));
