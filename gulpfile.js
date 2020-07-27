@@ -9,7 +9,6 @@ const rename = require('gulp-rename');
 const autoprefixer = require('autoprefixer');
 const del = require('del');
 const include = require('posthtml-include');
-const { series } = require('gulp');
 const server = require('browser-sync').create();
 
 // Очистка директории build
