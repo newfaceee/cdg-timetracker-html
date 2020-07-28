@@ -1,14 +1,13 @@
 'use strict';
-const navList = document.querySelector('.nav__list');
+const mainNavList = document.querySelector('.nav');
+const activeLink = 'nav__link--active';
 
-navList.addEventListener('click', (evt) => {
+mainNavList.addEventListener('click', (evt) => {
   const currentTarget = evt.currentTarget;
   const target = evt.target;
   if (target.classList.contains('nav__link')) {
-    currentTarget
-      .querySelector('.nav__link--active')
-      .classList.remove('nav__link--active');
+    currentTarget.querySelector(`.${activeLink}`).classList.remove(activeLink);
 
-    target.classList.add('nav__link--active');
+    target.classList.add(activeLink);
   }
 });
