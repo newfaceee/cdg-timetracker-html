@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrap">
+      <div class="page-header__container">
         <nav class="site-navigation nav">
           <div class="site-navigation__container">
             <ul class="nav__list">
@@ -25,7 +25,39 @@
                 <a href="#" class="nav__link">Project</a>
               </li>
             </ul>
-            <ul class="user-nav"></ul>
+          </div>
+        </nav>
+        <nav class="user-navigation user-nav">
+          <div class="user-navigation__container">
+            <ul class="user-nav__list">
+              <li class="user-nav__item">
+                <a href="#" class="user-nav__link user-nav__link--settings">
+                  <span class="visually-hidden">Settings</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a href="#" class="user-nav__link user-nav__link--info">
+                  <span class="visually-hidden">Info</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a href="#" class="user-nav__link user-nav__link--logout">
+                  <span class="visually-hidden">Logout</span>
+                </a>
+              </li>
+              <li class="user-nav__item">
+                <a href="#" class="user-nav__link user-nav__link--profile">
+                  <img
+                    class="user-nav__profile-image"
+                    width="46"
+                    height="46"
+                    src="./img/avatar.png"
+                    alt="profile avatar"
+                  />
+                  <span class="visually-hidden">Profile</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
