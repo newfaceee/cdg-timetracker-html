@@ -1,4 +1,5 @@
 @import './variables';
+@import './visually-hidden.scss';
 @import './components/page-header/index';
 
 body {
@@ -7,3 +8,9 @@ body {
   font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
   font-size: 18px;
 }
+
+// *,
+// ::after,
+// ::before {
+//   box-sizing: inherit;
+// }

@@ -1,4 +1,10 @@
 .page-header {
   background-color: $primary-color;
   color: #fff;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  &__container {
+    display: flex;
+  }
 }
