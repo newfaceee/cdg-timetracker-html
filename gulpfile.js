@@ -9,7 +9,6 @@ const rename = require('gulp-rename');
 const autoprefixer = require('autoprefixer');
 const del = require('del');
 const include = require('posthtml-include');
-const { series } = require('gulp');
 const server = require('browser-sync').create();
 
 // Очистка директории build
@@ -57,7 +56,32 @@ gulp.task('server', () => {
 
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
+  gulp.watch('source/js/*.js', gulp.series('copy'));
 });
 
-gulp.task('build', gulp.series('clean', 'css', 'html'));
+gulp.task('copy', () => {
+  return gulp
+    .src(['source/js/**'], {
+      base: 'source',
+    })
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('svg', () => {
+  return gulp
+    .src(['source/icons/**'], {
+      base: 'source',
+    })
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('img', () => {
+  return gulp
+    .src(['source/img/**'], {
+      base: 'source',
+    })
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'svg', 'img'));
 gulp.task('start', gulp.series('build', 'server'));
