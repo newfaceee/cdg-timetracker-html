@@ -30,6 +30,103 @@
     &--calendar {
       background-color: #f0f3f5;
       color: #3744bd;
+      position: relative;
+
+      .calendar {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 462px;
+        height: 462px;
+        background-color: #fff;
+        left: 0;
+        top: 55px;
+        padding: 35px 53px;
+        border-radius: 10px;
+
+        &__month {
+          color: #000;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        &__weekdays {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          .calendar__item {
+            color: #999;
+          }
+        }
+
+        &__days {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 42px;
+        }
+
+        &__item {
+          width: 44px;
+          height: 44px;
+          margin-right: 8px;
+          margin-bottom: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #444;
+          flex-direction: column;
+        }
+
+        &__item:nth-child(7n) {
+          margin-right: 0;
+        }
+
+        &__marker {
+          background-color: $marker-green;
+          width: 20px;
+          height: 6px;
+          border-radius: 48px;
+
+          &--done {
+            background-color: $marker-green;
+          }
+
+          &--in-progress {
+            background-color: $marker-yellow;
+          }
+
+          &--missed {
+            background-color: $marker-red;
+          }
+        }
+
+        &__info {
+          list-style: none;
+          margin: 0px;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+
+          .calendar__item {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: auto;
+            flex-direction: row;
+            margin-right: 13px;
+
+            .calendar__marker {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
     }
   }
 }
