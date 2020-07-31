@@ -1,0 +1,35 @@
+.filters {
+  font-size: 18px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__categories {
+    display: flex;
+    margin-left: auto;
+  }
+  &__btn {
+    outline: none;
+    border: 0;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: $btn-text-color;
+    display: block;
+
+    padding: 15px 28px;
+
+    cursor: pointer;
+
+    &--active {
+      background-color: #f0f3f5;
+      color: $btn-text-color-active;
+    }
+
+    &--calendar {
+      background-color: #f0f3f5;
+      color: #3744bd;
+    }
+  }
+}
