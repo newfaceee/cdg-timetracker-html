@@ -266,13 +266,51 @@
           <div class="worklog__container">
             <div class="worklog__item">
               <div class="worklog__header">
-                <p class="worklog__date">Wed, June 10</p>
-                <div class="worklog__info">
-                  <p class="worklog__total-time">
-                    06:05:00
-                  </p>
-                  <meter value="60" max="100"></meter>
+                <p class="worklog__date">
+                  <span class="worklog__weekday">Wed</span>, June 10
+                </p>
+                <div class="worklog__details">
+                  <div class="worklog__info">
+                    <p class="worklog__total-time">
+                      06:05:00
+                    </p>
+                    <div class="worklog__progress-bar bar">
+                      <div class="bar__done"></div>
+                    </div>
+                  </div>
+                  <button class="worklog__upload-btn worklog__btn"></button>
                 </div>
+              </div>
+              <div class="worklog__schedule event">
+                <ul class="event__list">
+                  <li class="event__item">
+                    <div class="event__timing">
+                      <span class="event__start">
+                        09:00
+                      </span>
+                      -
+                      <span class="event__end">
+                        10:00
+                      </span>
+                    </div>
+                    <div class="event__indicator"></div>
+                    <div class="event__details">
+                      <div class="event__info">
+                        <p class="event__id">JRM-310</p>
+                        <p class="event__name">Team standup</p>
+                      </div>
+                      <div class="event__details--right">
+                        <div class="event__bar"></div>
+                        <p class="event__duration">
+                          01:00:00
+                        </p>
+                        <button
+                          class="event__timer-start-btn worklog__btn"
+                        ></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
