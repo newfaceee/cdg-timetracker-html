@@ -27,7 +27,7 @@
     display: block;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       background-repeat: no-repeat;
       background-size: contain;
@@ -36,19 +36,19 @@
     &--settings::before {
       width: 20px;
       height: 20px;
-      background-image: url('../icons/settings.svg');
+      background-image: url("../icons/settings.svg");
     }
 
     &--info::before {
       width: 20px;
       height: 20px;
-      background-image: url('../icons/information.svg');
+      background-image: url("../icons/info.svg");
     }
 
     &--logout::before {
       width: 20px;
       height: 20px;
-      background-image: url('../icons/logout.svg');
+      background-image: url("../icons/logout.svg");
     }
   }
 }
