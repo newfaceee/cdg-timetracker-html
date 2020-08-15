@@ -1,0 +1,51 @@
+.sync {
+  display: flex;
+  align-items: center;
+  &__btn {
+    margin-left: 15px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+    &--input {
+      position: absolute;
+      left: -999999999px;
+      display: block;
+    }
+
+    &--checkmark {
+      display: block;
+      width: 28px;
+      height: 16px;
+      background-color: #c4cacb;
+      border: none;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+      user-select: none;
+    }
+
+    &--pointer {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 2px;
+      top: 3px;
+      transition: all 0.15s ease;
+    }
+
+    & .sync__btn--input:checked ~ .sync__btn--checkmark {
+      background-color: $primary-color;
+    }
+
+    & .sync__btn--input:checked ~ .sync__btn--pointer {
+      left: 14px;
+    }
+  }
+
+  &__calendar {
+    margin-left: auto;
+  }
+}

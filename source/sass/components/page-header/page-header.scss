@@ -1,12 +1,18 @@
 .page-header {
+  box-sizing: border-box;
   background-color: $primary-color;
-  color: #fff;
-  padding-left: 60px;
-  padding-right: 60px;
-
-  margin-bottom: 50px;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  margin-bottom: 52px;
+  display: flex;
+  align-items: center;
 
   &__container {
+    box-sizing: border-box;
+    padding-left: 72px;
+    padding-right: 72px;
     display: flex;
+    align-items: center;
+    width: 100%;
   }
 }

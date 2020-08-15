@@ -9,312 +9,515 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="site-navigation nav">
-          <div class="site-navigation__container">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link nav__link--active">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Issues</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Filter</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Project</a>
-              </li>
-            </ul>
-          </div>
+        <nav class="site-navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Home</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Issues</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Filter</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Projects</a>
+            </li>
+          </ul>
         </nav>
-        <nav class="user-navigation user-nav">
-          <div class="user-navigation__container">
-            <ul class="user-nav__list">
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--settings">
-                  <span class="visually-hidden">Settings</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--info">
-                  <span class="visually-hidden">Info</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--logout">
-                  <span class="visually-hidden">Logout</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--profile">
-                  <img
-                    class="user-nav__profile-image"
-                    width="46"
-                    height="46"
-                    src="./img/avatar.png"
-                    alt="profile avatar"
-                  />
-                  <span class="visually-hidden">Profile</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="user-navigation">
+          <ul class="user-navigation__list">
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link">
+                <span class="visually-hidden">Settings</span>
+                <object
+                  type="image/svg+xml"
+                  data="./icons/settings.svg"
+                  class="user-navigation__link--icon user-navigation__link--info-icon"
+                >
+                </object>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link">
+                <object
+                  type="image/svg+xml"
+                  data="./icons/info.svg"
+                  id="’object’"
+                  class="user-navigation__link--icon user-navigation__link--info-icon"
+                >
+                </object>
+                <span class="visually-hidden">Info</span>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link"
+                ><span class="visually-hidden">Logout</span>
+                <object
+                  type="image/svg+xml"
+                  data="./icons/logout.svg"
+                  class="user-navigation__link--icon user-navigation__link--logout-icon"
+                >
+                </object
+              ></a>
+            </li>
+            <li class="user-navigation__item">
+              <a
+                href="#"
+                class="user-navigation__link user-navigation__link--profile"
+              >
+                <span class="visually-hidden">Profile</span>
+                <img
+                  width="46"
+                  height="46"
+                  class="user-navigation__link--profile-icon"
+                  src="./img/avatar.jfif"
+                  alt="profile avatar"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
-      <div class="main__container">
-        <section class="filters">
-          <div class="filters__container">
-            <div class="filters__btn filters__btn--calendar">
-              10 June 2020
-              <span>
-                <img src="./icons/calendar.svg" alt="calendar icon" />
-              </span>
-              <div class="filters__btn--modal calendar">
-                <div class="calendar__container">
-                  <p class="calendar__month">
-                    June
-                  </p>
-                  <div class="calendar__dates">
-                    <ul class="calendar__weekdays">
-                      <li class="calendar__item">S</li>
-                      <li class="calendar__item">M</li>
-                      <li class="calendar__item">T</li>
-                      <li class="calendar__item">W</li>
-                      <li class="calendar__item">T</li>
-                      <li class="calendar__item">F</li>
-                      <li class="calendar__item">S</li>
-                    </ul>
-                    <ul class="calendar__days">
-                      <li class="calendar__item">
-                        29
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        30
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        31
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        1
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        2
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        3
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        4
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        5
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        6
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        7
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        8
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        9
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        10
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        11
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        12
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        13
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        14
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        15
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        16
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        17
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        18
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        19
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        20
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        21
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        22
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        23
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        24
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        25
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        26
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        27
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        28
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        29
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        30
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        31
-                        <span class="calendar__marker"></span>
-                      </li>
-                      <li class="calendar__item">
-                        1
-                        <span class="calendar__marker"></span>
-                      </li>
-                    </ul>
-                    <ul class="calendar__info">
-                      <li class="calendar__item">
-                        <span
-                          class="calendar__marker calendar__marker--done"
-                        ></span>
-                        Done
-                      </li>
-                      <li class="calendar__item">
-                        <span
-                          class="calendar__marker calendar__marker--in-progress"
-                        ></span>
-                        In progress
-                      </li>
-                      <li class="calendar__item">
-                        <span
-                          class="calendar__marker calendar__marker--missed"
-                        ></span>
-                        Missed
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="filters__categories">
-              <div class="filters__btn filters__btn--all filters__btn--active">
-                All
-              </div>
-              <div class="filters__btn filters__btn--favorites">
-                Favorites
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="worklog">
-          <div class="worklog__container">
-            <div class="worklog__item">
-              <div class="worklog__header">
-                <p class="worklog__date">
-                  <span class="worklog__weekday">Wed</span>, June 10
-                </p>
-                <div class="worklog__details">
-                  <div class="worklog__info">
-                    <p class="worklog__total-time">
-                      06:05:00
+      <div class="main__wrapper">
+        <div class="main__left-side">
+          <section class="filters">
+            <div class="filters__container">
+              <div class="filters__btn filters__btn--calendar">
+                10 June 2020
+                <span>
+                  <object
+                    type="image/svg+xml"
+                    data="./icons/calendar.svg"
+                    class=""
+                  >
+                  </object>
+                </span>
+                <div class="filters__btn--modal calendar">
+                  <div class="calendar__container">
+                    <p class="calendar__month">
+                      June
                     </p>
-                    <div class="worklog__progress-bar bar">
-                      <div class="bar__done"></div>
+                    <div class="calendar__dates">
+                      <ul class="calendar__weekdays">
+                        <li class="calendar__item">S</li>
+                        <li class="calendar__item">M</li>
+                        <li class="calendar__item">T</li>
+                        <li class="calendar__item">W</li>
+                        <li class="calendar__item">T</li>
+                        <li class="calendar__item">F</li>
+                        <li class="calendar__item">S</li>
+                      </ul>
+                      <ul class="calendar__days">
+                        <li class="calendar__item">
+                          29
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          30
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          31
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          1
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          2
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          3
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          4
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          5
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          6
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          7
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          8
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          9
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          10
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          11
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          12
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          13
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          14
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          15
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          16
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          17
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          18
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          19
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          20
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          21
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          22
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          23
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          24
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          25
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          26
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          27
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          28
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          29
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          30
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          31
+                          <span class="calendar__marker"></span>
+                        </li>
+                        <li class="calendar__item">
+                          1
+                          <span class="calendar__marker"></span>
+                        </li>
+                      </ul>
+                      <ul class="calendar__info">
+                        <li class="calendar__item">
+                          <span
+                            class="calendar__marker calendar__marker--done"
+                          ></span>
+                          Done
+                        </li>
+                        <li class="calendar__item">
+                          <span
+                            class="calendar__marker calendar__marker--in-progress"
+                          ></span>
+                          In progress
+                        </li>
+                        <li class="calendar__item">
+                          <span
+                            class="calendar__marker calendar__marker--missed"
+                          ></span>
+                          Missed
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <button class="worklog__upload-btn worklog__btn"></button>
                 </div>
               </div>
-              <div class="worklog__schedule event">
-                <ul class="event__list">
-                  <li class="event__item">
-                    <div class="event__timing">
-                      <span class="event__start">
-                        09:00
-                      </span>
-                      -
-                      <span class="event__end">
-                        10:00
-                      </span>
-                    </div>
-                    <div class="event__indicator"></div>
-                    <div class="event__details">
-                      <div class="event__info">
-                        <p class="event__id">JRM-310</p>
-                        <p class="event__name">Team standup</p>
+              <div class="filters__categories">
+                <div
+                  class="filters__btn filters__btn--all filters__btn--active"
+                >
+                  All
+                </div>
+                <div class="filters__btn filters__btn--favorites">
+                  Favorites
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="worklog">
+            <div class="worklog__container">
+              <div class="worklog__item">
+                <div class="worklog__header">
+                  <p class="worklog__date">
+                    <span class="worklog__weekday">Wed</span>, June 10
+                  </p>
+                  <div class="worklog__details">
+                    <div class="worklog__info">
+                      <p class="worklog__total-time">
+                        06:05:00
+                      </p>
+                      <div class="worklog__progress-bar bar">
+                        <div class="bar__done"></div>
                       </div>
-                      <div class="event__details--right">
-                        <div class="event__bar"></div>
-                        <p class="event__duration">
-                          01:00:00
-                        </p>
-                        <button
-                          class="event__timer-start-btn worklog__btn"
-                        ></button>
-                      </div>
                     </div>
-                  </li>
+                    <button class="worklog__upload-btn worklog__btn">
+                      <span>
+                        <object
+                          type="image/svg+xml"
+                          data="./icons/upload.svg"
+                          class=""
+                        >
+                        </object
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="worklog__schedule event">
+                  <ul class="event__list">
+                    <li class="event__item">
+                      <div class="event__timing">
+                        <span class="event__start">
+                          09:00
+                        </span>
+                        -
+                        <span class="event__end">
+                          10:00
+                        </span>
+                      </div>
+                      <div class="event__indicator"></div>
+                      <div class="event__details">
+                        <div class="event__info">
+                          <p class="event__id">JRM-310</p>
+                          <p class="event__name">Team standup</p>
+                        </div>
+                        <div class="event__details--right">
+                          <div class="event__bar">
+                            <div class="event__bar--progress"></div>
+                          </div>
+                          <p class="event__duration">
+                            01:00:00
+                          </p>
+                          <button class="event__timer-start-btn worklog__btn">
+                            <object
+                              type="image/svg+xml"
+                              data="./icons/start.svg"
+                              class=""
+                            >
+                            </object>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="event__item event__item--active">
+                      <div class="event__timing">
+                        <span class="event__start">
+                          09:00
+                        </span>
+                        -
+                        <span class="event__end">
+                          10:00
+                        </span>
+                      </div>
+                      <div class="event__indicator"></div>
+                      <div class="event__details">
+                        <div class="event__info">
+                          <p class="event__id">JRM-310</p>
+                          <p class="event__name">Team standup</p>
+                        </div>
+                        <div class="event__details--right">
+                          <div class="event__bar">
+                            <div class="event__bar--progress"></div>
+                          </div>
+                          <p class="event__duration">
+                            01:00:00
+                          </p>
+                          <button class="event__timer-pause-btn worklog__btn">
+                            <object
+                              type="image/svg+xml"
+                              data="./icons/pause.svg"
+                              class="user-navigation__link--icon user-navigation__link--info-icon"
+                            >
+                            </object>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="event__item">
+                      <div class="event__timing">
+                        <span class="event__start">
+                          09:00
+                        </span>
+                        -
+                        <span class="event__end">
+                          10:00
+                        </span>
+                      </div>
+                      <div class="event__indicator"></div>
+                      <div class="event__details">
+                        <div class="event__info">
+                          <p class="event__id">JRM-310</p>
+                          <p class="event__name">Team standup</p>
+                        </div>
+                        <div class="event__details--right">
+                          <div class="event__bar">
+                            <div class="event__bar--progress"></div>
+                          </div>
+                          <p class="event__duration">
+                            01:00:00
+                          </p>
+                          <button class="event__timer-start-btn worklog__btn">
+                            <object
+                              type="image/svg+xml"
+                              data="./icons/start.svg"
+                              class=""
+                            >
+                            </object>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="event__item">
+                      <div class="event__timing">
+                        <span class="event__start">
+                          09:00
+                        </span>
+                        -
+                        <span class="event__end">
+                          10:00
+                        </span>
+                      </div>
+                      <div class="event__indicator"></div>
+                      <div class="event__details">
+                        <div class="event__info">
+                          <p class="event__id">JRM-310</p>
+                          <p class="event__name">Team standup</p>
+                        </div>
+                        <div class="event__details--right">
+                          <div class="event__bar">
+                            <div class="event__bar--progress"></div>
+                          </div>
+                          <p class="event__duration">
+                            01:00:00
+                          </p>
+                          <button class="event__timer-start-btn worklog__btn">
+                            <object
+                              type="image/svg+xml"
+                              data="./icons/start.svg"
+                              class=""
+                            >
+                            </object>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <section class="worklog__timebar timebar">
+                    <div class="timebar__timeline"></div>
+                    <ul class="timebar__timing-list">
+                      <li class="timebar__item">07:00</li>
+                      <li class="timebar__item">08:00</li>
+                      <li class="timebar__item">09:00</li>
+                      <li class="timebar__item">10:00</li>
+                      <li class="timebar__item">11:00</li>
+                      <li class="timebar__item">12:00</li>
+                      <li class="timebar__item">13:00</li>
+                      <li class="timebar__item">14:00</li>
+                      <li class="timebar__item">15:00</li>
+                      <li class="timebar__item">16:00</li>
+                      <li class="timebar__item">17:00</li>
+                      <li class="timebar__item">18:00</li>
+                      <li class="timebar__item">19:00</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="main__right-side">
+          <section class="timer main__item">
+            <div class="timer__header">
+              <p class="timer__caption main__header">
+                Time tracking
+              </p>
+              <div class="timer__options options">
+                <button class="options__more-btn"></button>
+                <ul class="options__list">
+                  <li class="options__item">Jira Link</li>
+                  <li class="options__item">Jira Link</li>
+                  <li class="options__item">Jira Link</li>
+                  <li class="options__item">Jira Link</li>
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
+            <div class="timer__new-worklog">
+              <button class="timer__btn"></button>
+              <p class="timer__description">
+                New Worklog
+              </p>
+            </div>
+          </section>
+          <section class="sync main__item">
+            <div class="sync__caption main__header">Google calendar sync</div>
+            <label class="sync__btn">
+              <input class="sync__btn--input" type="checkbox" />
+              <span class="sync__btn--checkmark"></span>
+              <span class="sync__btn--pointer"></span>
+            </label>
+            <div class="sync__calendar">
+              <object
+                type="image/svg+xml"
+                data="./icons/calendar.svg"
+                class="sync__calendar--icon"
+              >
+              </object>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <script src="./js/common.js"></script>

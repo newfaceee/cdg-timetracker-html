@@ -1,7 +1,31 @@
 .main {
   color: $text-color-primary;
-  &__container {
-    padding-left: 60px;
-    padding-right: 60px;
+  &__wrapper {
+    padding-left: 72px;
+    padding-right: 72px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__left-side {
+    width: 65%;
+    min-width: 685px;
+    margin-right: 65px;
+  }
+
+  &__right-side {
+    box-sizing: border-box;
+    border-left: 1px solid $gray;
+    flex-grow: 1;
+  }
+  &__item {
+    padding-left: 35px;
+  }
+
+  &__header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
   }
 }
