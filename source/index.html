@@ -9,57 +9,75 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="site-navigation nav">
-          <div class="site-navigation__container">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link nav__link--active">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Issues</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Filter</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Project</a>
-              </li>
-            </ul>
-          </div>
+        <nav class="site-navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Home</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Issues</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Filter</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link">Projects</a>
+            </li>
+          </ul>
         </nav>
-        <nav class="user-navigation user-nav">
-          <div class="user-navigation__container">
-            <ul class="user-nav__list">
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--settings">
-                  <span class="visually-hidden">Settings</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--info">
-                  <span class="visually-hidden">Info</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--logout">
-                  <span class="visually-hidden">Logout</span>
-                </a>
-              </li>
-              <li class="user-nav__item">
-                <a href="#" class="user-nav__link user-nav__link--profile">
-                  <img
-                    class="user-nav__profile-image"
-                    width="46"
-                    height="46"
-                    src="./img/avatar.jfif"
-                    alt="profile avatar"
-                  />
-                  <span class="visually-hidden">Profile</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="user-navigation">
+          <ul class="user-navigation__list">
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link">
+                <span class="visually-hidden">Settings</span>
+                <object
+                  type="image/svg+xml"
+                  data="./icons/settings.svg"
+                  class="user-navigation__link--icon user-navigation__link--info-icon"
+                >
+                </object>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link">
+                <object
+                  type="image/svg+xml"
+                  data="./icons/info.svg"
+                  id="’object’"
+                  class="user-navigation__link--icon user-navigation__link--info-icon"
+                >
+                </object>
+                <span class="visually-hidden">Info</span>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link"
+                ><span class="visually-hidden">Logout</span>
+                <object
+                  type="image/svg+xml"
+                  data="./icons/logout.svg"
+                  class="user-navigation__link--icon user-navigation__link--logout-icon"
+                >
+                </object
+              ></a>
+            </li>
+            <li class="user-navigation__item">
+              <a
+                href="#"
+                class="user-navigation__link user-navigation__link--profile"
+              >
+                <span class="visually-hidden">Profile</span>
+                <img
+                  width="46"
+                  height="46"
+                  class="user-navigation__link--profile-icon"
+                  src="./img/avatar.jfif"
+                  alt="profile avatar"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
