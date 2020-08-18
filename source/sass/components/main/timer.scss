@@ -23,39 +23,7 @@
     text-transform: uppercase;
     color: $text-color-gray;
   }
-  .options {
-    position: relative;
-    display: flex;
-    margin-left: auto;
-    &__more-btn {
-      width: 24px;
-      height: 24px;
 
-      background: transparent url("../icons/more-horizontal.svg") center
-        no-repeat;
-      border: none;
-    }
-
-    &__list {
-      box-sizing: border-box;
-      position: absolute;
-      list-style-type: none;
-      min-width: 169px;
-      margin: 0;
-      padding: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-radius: 10px;
-      background-color: #fff;
-      left: -139px;
-      top: 20px;
-    }
-
-    &__item {
-      box-sizing: border-box;
-      padding: 16px 32px;
-    }
-  }
   &__btn {
     width: 66px;
     height: 66px;
