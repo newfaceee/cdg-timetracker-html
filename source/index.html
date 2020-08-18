@@ -385,6 +385,22 @@
                           </button>
                         </div>
                       </div>
+                      <div class="event__menu menu">
+                        <ul class="menu__list">
+                          <li class="menu__item">
+                            <a class="menu__link" href="#">Jira Link</a>
+                          </li>
+                          <li class="menu__item">
+                            <a class="menu__link" href="#">Duplicate</a>
+                          </li>
+                          <li class="menu__item">
+                            <a class="menu__link" href="#">Add to favorite</a>
+                          </li>
+                          <li class="menu__item">
+                            <a class="menu__link" href="#">Delete</a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="event__item">
                       <div class="event__timing">
@@ -484,13 +500,13 @@
               <p class="timer__caption main__header">
                 Time tracking
               </p>
-              <div class="timer__options options">
-                <button class="options__more-btn"></button>
-                <ul class="options__list">
-                  <li class="options__item">Jira Link</li>
-                  <li class="options__item">Jira Link</li>
-                  <li class="options__item">Jira Link</li>
-                  <li class="options__item">Jira Link</li>
+              <div class="timer__menu menu">
+                <button class="menu__more-btn"></button>
+                <ul class="menu__list">
+                  <li class="menu__item">Jira Link</li>
+                  <li class="menu__item">Jira Link</li>
+                  <li class="menu__item">Jira Link</li>
+                  <li class="menu__item">Jira Link</li>
                 </ul>
               </div>
             </div>
@@ -502,19 +518,32 @@
             </div>
           </section>
           <section class="sync main__item">
-            <div class="sync__caption main__header">Google calendar sync</div>
-            <label class="sync__btn">
-              <input class="sync__btn--input" type="checkbox" />
-              <span class="sync__btn--checkmark"></span>
-              <span class="sync__btn--pointer"></span>
-            </label>
-            <div class="sync__calendar">
-              <object
-                type="image/svg+xml"
-                data="./icons/calendar.svg"
-                class="sync__calendar--icon"
-              >
-              </object>
+            <div class="sync__header">
+              <div class="sync__caption main__header">Google calendar sync</div>
+              <label class="sync__btn">
+                <input class="sync__btn--input" type="checkbox" />
+                <span class="sync__btn--checkmark"></span>
+                <span class="sync__btn--pointer"></span>
+              </label>
+              <div class="sync__calendar">
+                <object
+                  type="image/svg+xml"
+                  data="./icons/calendar.svg"
+                  class="sync__calendar--icon"
+                >
+                </object>
+              </div>
+            </div>
+
+            <div class="sync__events">
+              <ul class="sync__list">
+                <li class="sync__item">
+                  <a href="#" class="sync__link">
+                    <span>Logo redesign</span>
+                    <span>09:00 - 10:00</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
         </div>
