@@ -60,6 +60,10 @@
   }
 
   .event {
+    .menu__list {
+      left: -110px;
+      top: 50px;
+    }
     font-size: 18px;
     &__list {
       list-style-type: none;
@@ -96,7 +100,8 @@
           position: absolute;
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;
-          background: $primary-color url("../icons/more.svg") right no-repeat;
+          background: $primary-color url("../icons/more-vertical.svg") right
+            no-repeat;
           right: -25px;
           z-index: -1;
         }
