@@ -60,6 +60,10 @@
   }
 
   .event {
+    .menu__list {
+      left: -110px;
+      top: 50px;
+    }
     font-size: 18px;
     &__list {
       list-style-type: none;
