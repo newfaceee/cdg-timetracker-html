@@ -32,68 +32,66 @@
       background-color: #f0f3f5;
       color: #3744bd;
       position: relative;
-
       .calendar {
+        z-index: 5;
         box-sizing: border-box;
-        display: none;
-
         position: absolute;
-        width: 462px;
-        height: 462px;
-        background-color: #fff;
         left: 0;
         top: 55px;
-        padding: 35px 53px;
+        width: 462px;
+        min-height: 472px;
+        background-color: #fff;
+        box-shadow: 0px 7px 30px rgba(148, 156, 160, 0.08);
         border-radius: 10px;
+        padding: 35px 53px;
 
-        &__month {
-          color: #000;
-          margin: 0;
-          padding: 0;
-          margin-bottom: 20px;
-          text-align: center;
-        }
-
-        &__weekdays {
-          list-style: none;
-          margin: 0;
-          padding: 0;
+        &__table {
           display: flex;
-          .calendar__item {
-            color: #999;
-          }
+          flex-direction: column;
         }
 
-        &__days {
-          list-style: none;
-          margin: 0;
-          padding: 0;
+        &__body {
+          margin-bottom: 50px;
+        }
+
+        &__row {
           display: flex;
-          flex-wrap: wrap;
-          margin-bottom: 42px;
         }
 
-        &__item {
+        &__week-day {
+        }
+
+        &__cell {
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           width: 44px;
           height: 44px;
           margin-right: 8px;
           margin-bottom: 8px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           color: #444;
-          flex-direction: column;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &--today {
+            background-color: $primary-color;
+            border-radius: 50%;
+            color: #fff;
+          }
         }
 
-        &__item:nth-child(7n) {
-          margin-right: 0;
-        }
-
-        &__marker {
-          background-color: $marker-green;
+        &__progress-bar {
+          display: block;
+          box-sizing: border-box;
+          border: 1px solid #fff;
           width: 20px;
           height: 6px;
-          border-radius: 48px;
+          border-radius: 10px;
+          background-color: $marker-green;
 
           &--done {
             background-color: $marker-green;
@@ -107,25 +105,22 @@
             background-color: $marker-red;
           }
         }
+        .legend {
+          color: #898989;
 
-        &__info {
-          list-style: none;
-          margin: 0px;
-          padding: 0;
-          display: flex;
-          justify-content: center;
+          &__row {
+            display: flex;
+            justify-content: center;
+          }
 
-          .calendar__item {
-            margin: 0;
-            padding: 0;
-            width: auto;
-            height: auto;
-            flex-direction: row;
-            margin-right: 13px;
-
-            .calendar__marker {
-              margin-right: 5px;
-            }
+          &__cell {
+            display: flex;
+            align-items: center;
+          }
+          &__icon {
+            width: 20px;
+            height: 6px;
+            box-sizing: border-box;
           }
         }
       }
