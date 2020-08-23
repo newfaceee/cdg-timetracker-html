@@ -480,7 +480,7 @@
               <p class="timer__caption main__header">
                 Time tracking
               </p>
-              <div class="timer__menu menu">
+              <!-- <div class="timer__menu menu">
                 <button class="menu__more-btn"></button>
                 <ul class="menu__list">
                   <li class="menu__item">Jira Link</li>
@@ -488,13 +488,30 @@
                   <li class="menu__item">Jira Link</li>
                   <li class="menu__item">Jira Link</li>
                 </ul>
-              </div>
+              </div> -->
             </div>
-            <div class="timer__new-worklog">
+            <!-- <div class="timer__new-worklog">
               <button class="timer__btn"></button>
               <p class="timer__description">
                 New Worklog
               </p>
+            </div> -->
+            <div class="timer__current-event current-event">
+              <div class="current-event__container">
+                <p class="current-event__title">Meeting with QA</p>
+                <button class="current-event__add-issue-btn">Add issue</button>
+                <p class="current-event__timer">
+                  1:15:00
+                </p>
+                <div class="current-event__controls">
+                  <button
+                    class="current-event__btn current-event__btn--stop"
+                  ></button>
+                  <button
+                    class="current-event__btn current-event__btn--pause"
+                  ></button>
+                </div>
+              </div>
             </div>
           </section>
           <section class="sync main__item">
@@ -518,10 +535,12 @@
             <div class="sync__events">
               <ul class="sync__list">
                 <li class="sync__item">
-                  <a href="#" class="sync__link">
-                    <span>Logo redesign</span>
-                    <span>09:00 - 10:00</span>
-                  </a>
+                  <p class="sync__item--text sync__item--title">
+                    Logo redesign
+                  </p>
+                  <p class="sync__item--text sync__item--timing">
+                    09:00 - 10:00
+                  </p>
                 </li>
               </ul>
             </div>
