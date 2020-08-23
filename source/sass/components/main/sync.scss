@@ -1,8 +1,14 @@
 .sync {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
   &__btn {
-    margin-left: 15px;
     display: block;
     position: relative;
     cursor: pointer;
@@ -56,5 +62,31 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    padding-top: 28px;
+    padding-left: 40px;
+    min-height: 168px;
+    background-color: $highlight-gray;
+    border-radius: 10px;
+    position: relative;
+
+    &--text {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 76px;
+      border-radius: 1px;
+      background-color: #75e1f9;
+      left: 0;
+      top: 45px;
+    }
   }
 }
