@@ -1,0 +1,62 @@
+.current-event {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  &__add-issue-btn {
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+
+    background-color: transparent;
+    color: #828282;
+    margin-bottom: 10px;
+  }
+
+  &__timer {
+    font-size: 54px;
+    color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  &__controls {
+    display: flex;
+  }
+
+  &__btn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+
+    &:first-child {
+      margin-right: 22px;
+    }
+
+    &--stop {
+      background-color: $btn-red;
+    }
+
+    &--pause {
+      background-color: $primary-color;
+    }
+  }
+}
