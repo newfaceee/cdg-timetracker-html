@@ -34,8 +34,7 @@
                   type="image/svg+xml"
                   data="./icons/settings.svg"
                   class="user-navigation__link--icon user-navigation__link--info-icon"
-                >
-                </object>
+                ></object>
               </a>
             </li>
             <li class="user-navigation__item">
@@ -45,8 +44,7 @@
                   data="./icons/info.svg"
                   id="’object’"
                   class="user-navigation__link--icon user-navigation__link--info-icon"
-                >
-                </object>
+                ></object>
                 <span class="visually-hidden">Info</span>
               </a>
             </li>
@@ -57,8 +55,7 @@
                   type="image/svg+xml"
                   data="./icons/logout.svg"
                   class="user-navigation__link--icon user-navigation__link--logout-icon"
-                >
-                </object
+                ></object
               ></a>
             </li>
             <li class="user-navigation__item">
@@ -92,10 +89,9 @@
                     type="image/svg+xml"
                     data="./icons/calendar.svg"
                     class=""
-                  >
-                  </object>
+                  ></object>
                 </span>
-                <div class="filters__btn--modal calendar">
+                <div class="calendar hidden filters__btn--modal">
                   <div class="calendar__container">
                     <table class="calendar__table">
                       <thead class="calendar__header">
@@ -277,9 +273,7 @@
                   </p>
                   <div class="worklog__details">
                     <div class="worklog__info">
-                      <p class="worklog__total-time">
-                        06:05:00
-                      </p>
+                      <p class="worklog__total-time">06:05:00</p>
                       <div class="worklog__progress-bar bar">
                         <div class="bar__done"></div>
                       </div>
@@ -290,8 +284,7 @@
                           type="image/svg+xml"
                           data="./icons/upload.svg"
                           class=""
-                        >
-                        </object
+                        ></object
                       ></span>
                     </button>
                   </div>
@@ -299,155 +292,61 @@
                 <div class="worklog__schedule event">
                   <ul class="event__list">
                     <li class="event__item">
-                      <div class="event__timing">
-                        <span class="event__start">
-                          09:00
-                        </span>
-                        -
-                        <span class="event__end">
-                          10:00
-                        </span>
-                      </div>
-                      <div class="event__indicator"></div>
-                      <div class="event__details">
-                        <div class="event__info">
-                          <p class="event__id">JRM-310</p>
-                          <p class="event__name">Team standup</p>
+                      <div class="event__wrapper">
+                        <div class="event__timing">
+                          <span class="event__start"> 09:00 </span>
+                          -
+                          <span class="event__end"> 10:00 </span>
                         </div>
-                        <div class="event__details--right">
-                          <div class="event__bar">
-                            <div class="event__bar--progress"></div>
+                        <div class="event__status"></div>
+                        <div class="event__details">
+                          <div class="event__info">
+                            <p class="event__id">JRM-310</p>
+                            <p class="event__name">Team standup</p>
                           </div>
-                          <p class="event__duration">
-                            01:00:00
-                          </p>
-                          <button class="event__timer-start-btn worklog__btn">
-                            <object
-                              type="image/svg+xml"
-                              data="./icons/start.svg"
-                              class=""
-                            >
-                            </object>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="event__item event__item--active">
-                      <div class="event__timing">
-                        <span class="event__start">
-                          09:00
-                        </span>
-                        -
-                        <span class="event__end">
-                          10:00
-                        </span>
-                      </div>
-                      <div class="event__indicator"></div>
-                      <div class="event__details">
-                        <div class="event__info">
-                          <p class="event__id">JRM-310</p>
-                          <p class="event__name">Team standup</p>
-                        </div>
-                        <div class="event__details--right">
-                          <div class="event__bar">
-                            <div class="event__bar--progress"></div>
+                          <div class="event__details--right">
+                            <div class="event__bar"></div>
+                            <p class="event__duration">01:00:00</p>
+                            <button class="event__timer-start-btn worklog__btn">
+                              <object
+                                type="image/svg+xml"
+                                data="./icons/start.svg"
+                                class=""
+                              ></object>
+                            </button>
                           </div>
-                          <p class="event__duration">
-                            01:00:00
-                          </p>
-                          <button class="event__timer-pause-btn worklog__btn">
-                            <object
-                              type="image/svg+xml"
-                              data="./icons/pause.svg"
-                              class="user-navigation__link--icon user-navigation__link--info-icon"
-                            >
-                            </object>
-                          </button>
                         </div>
                       </div>
                       <div class="event__menu menu">
+                        <button class="menu__more-btn menu__more-btn--horizontal">
+                          <svg
+                            class="menu__more-icon"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M9.16699 15.5833C9.16699 14.5708 9.9878 13.75 11.0003 13.75C12.0128 13.75 12.8337 14.5708 12.8337 15.5833C12.8337 16.5959 12.0128 17.4167 11.0003 17.4167C9.9878 17.4167 9.16699 16.5959 9.16699 15.5833Z"
+                              fill="white"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M9.16699 5.49999C9.16699 4.48747 9.9878 3.66666 11.0003 3.66666C12.0128 3.66666 12.8337 4.48747 12.8337 5.49999C12.8337 6.51251 12.0128 7.33332 11.0003 7.33332C9.9878 7.33332 9.16699 6.51251 9.16699 5.49999Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
                         <ul class="menu__list">
-                          <li class="menu__item">
-                            <a class="menu__link" href="#">Jira Link</a>
-                          </li>
-                          <li class="menu__item">
-                            <a class="menu__link" href="#">Duplicate</a>
-                          </li>
-                          <li class="menu__item">
-                            <a class="menu__link" href="#">Add to favorite</a>
-                          </li>
-                          <li class="menu__item">
-                            <a class="menu__link" href="#">Delete</a>
-                          </li>
+                          <li class="menu__item">Jira Link</li>
+                          <li class="menu__item">Jira Link</li>
+                          <li class="menu__item">Jira Link</li>
+                          <li class="menu__item">Jira Link</li>
                         </ul>
-                      </div>
-                    </li>
-                    <li class="event__item">
-                      <div class="event__timing">
-                        <span class="event__start">
-                          09:00
-                        </span>
-                        -
-                        <span class="event__end">
-                          10:00
-                        </span>
-                      </div>
-                      <div class="event__indicator"></div>
-                      <div class="event__details">
-                        <div class="event__info">
-                          <p class="event__id">JRM-310</p>
-                          <p class="event__name">Team standup</p>
-                        </div>
-                        <div class="event__details--right">
-                          <div class="event__bar">
-                            <div class="event__bar--progress"></div>
-                          </div>
-                          <p class="event__duration">
-                            01:00:00
-                          </p>
-                          <button class="event__timer-start-btn worklog__btn">
-                            <object
-                              type="image/svg+xml"
-                              data="./icons/start.svg"
-                              class=""
-                            >
-                            </object>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="event__item">
-                      <div class="event__timing">
-                        <span class="event__start">
-                          09:00
-                        </span>
-                        -
-                        <span class="event__end">
-                          10:00
-                        </span>
-                      </div>
-                      <div class="event__indicator"></div>
-                      <div class="event__details">
-                        <div class="event__info">
-                          <p class="event__id">JRM-310</p>
-                          <p class="event__name">Team standup</p>
-                        </div>
-                        <div class="event__details--right">
-                          <div class="event__bar">
-                            <div class="event__bar--progress"></div>
-                          </div>
-                          <p class="event__duration">
-                            01:00:00
-                          </p>
-                          <button class="event__timer-start-btn worklog__btn">
-                            <object
-                              type="image/svg+xml"
-                              data="./icons/start.svg"
-                              class=""
-                            >
-                            </object>
-                          </button>
-                        </div>
                       </div>
                     </li>
                   </ul>
@@ -477,9 +376,7 @@
         <div class="main__right-side">
           <section class="timer main__item">
             <div class="timer__header">
-              <p class="timer__caption main__header">
-                Time tracking
-              </p>
+              <p class="timer__caption main__header">Time tracking</p>
               <!-- <div class="timer__menu menu">
                 <button class="menu__more-btn"></button>
                 <ul class="menu__list">
@@ -500,9 +397,7 @@
               <div class="current-event__container">
                 <p class="current-event__title">Meeting with QA</p>
                 <button class="current-event__add-issue-btn">Add issue</button>
-                <p class="current-event__timer">
-                  1:15:00
-                </p>
+                <p class="current-event__timer">1:15:00</p>
                 <div class="current-event__controls">
                   <button
                     class="current-event__btn current-event__btn--stop"
@@ -527,8 +422,7 @@
                   type="image/svg+xml"
                   data="./icons/calendar.svg"
                   class="sync__calendar--icon"
-                >
-                </object>
+                ></object>
               </div>
             </div>
 
