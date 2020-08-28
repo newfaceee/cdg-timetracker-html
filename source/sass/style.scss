@@ -26,8 +26,6 @@ body {
   overflow: hidden;
 }
 
-// *,
-// ::after,
-// ::before {
-//   box-sizing: inherit;
-// }
+.hidden {
+  display: none;
+}
