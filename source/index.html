@@ -318,7 +318,9 @@
                         </div>
                       </div>
                       <div class="event__menu menu">
-                        <button class="menu__more-btn menu__more-btn--horizontal">
+                        <button
+                          class="menu__more-btn menu__more-btn--horizontal"
+                        >
                           <svg
                             class="menu__more-icon"
                             width="22"
@@ -442,6 +444,48 @@
         </div>
       </div>
     </main>
+    <section class="new-worklog">
+      <div class="new-worklog__header">
+        <p class="new-worklog__caption">New Worklog</p>
+      </div>
+      <div class="new-worklog__main">
+        <div class="new-worklog__slider slider">
+          <div class="slider__controls controls">
+            <div class="controls__track"></div>
+            <div class="controls__range"></div>
+            <div class="controls__thumb controls__thumb--left">
+              <p class="controls__thumb--time">16:30</p>
+            </div>
+            <div class="controls__thumb controls__thumb--right">
+              <p class="controls__thumb--time">16:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="new-worklog__details">
+          <label class="new-worklog__label" for="worklog-name">
+            Worklog name
+          </label>
+          <input
+            id="worklog-name"
+            type="text"
+            placeholder="Enter the worklog name"
+            class="new-worklog__input new-worklog__input--worklog-name"
+          />
+          <label class="new-worklog__label" for="issue-name"> Issue </label>
+          <input
+            id="issue-name"
+            type="text"
+            placeholder="Enter the issue name"
+            class="new-worklog__input new-worklog__input--issue-name"
+          />
+        </div>
+        <div class="new-worklog__buttons">
+          <button class="new-worklog__btn new-worklog__btn--accept"></button>
+          <button class="new-worklog__btn new-worklog__btn--decline"></button>
+        </div>
+      </div>
+    </section>
     <script src="./js/common.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
